@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 from groq import Groq
 
@@ -15,14 +16,8 @@ client = Groq(api_key=my_api_key)
 model = "openai/gpt-oss-120b"
 prompt = "I love you"
 role = "user"
-sys_message = {
-    "role": "system",
-    "content": "You are my wife."
-}
-message = {
-    "role": role,
-    "content": prompt
-}
+sys_message = {"role": "system", "content": "You are my wife."}
+message = {"role": role, "content": prompt}
 messages = [sys_message, message]
 models = client.models.list()
 

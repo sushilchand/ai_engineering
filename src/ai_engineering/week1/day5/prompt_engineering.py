@@ -2,6 +2,7 @@ from groq import Groq
 
 from ai_engineering.constants import GROQ_API_KEY, LLM_MODEL_NAME
 
+
 def main():
     client = Groq(api_key=GROQ_API_KEY)
     # bad_prompt = """
@@ -24,16 +25,11 @@ def main():
     This is a user complaint:
     Didn't recieve my cashback of laptop purchase
     """
-    message = {
-        "role": "user",
-        "content": prompt
-    }
+    message = {"role": "user", "content": prompt}
 
-    response = client.chat.completions.create(
-        model=LLM_MODEL_NAME,
-        messages=[message]
-    )
+    response = client.chat.completions.create(model=LLM_MODEL_NAME, messages=[message])
     print(response.choices[0].message.content)
+
 
 if __name__ == "__main__":
     main()
