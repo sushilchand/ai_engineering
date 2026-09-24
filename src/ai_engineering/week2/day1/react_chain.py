@@ -4,7 +4,7 @@ import time
 from groq import Groq
 
 from ai_engineering.constants import GROQ_API_KEY, LLM_MODEL_NAME
-from ai_engineering.week1.day6.utils import calculator, get_pricing
+from ai_engineering.week2.day6.utils import calculator, get_pricing
 
 
 def main():
