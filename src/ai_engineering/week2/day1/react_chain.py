@@ -4,7 +4,7 @@ import time
 from groq import Groq
 
 from ai_engineering.constants import GROQ_API_KEY, LLM_MODEL_NAME
-from ai_engineering.week2.day6.utils import calculator, get_pricing
+from ai_engineering.week2.day1.utils import calculator, get_pricing
 
 
 def main():
@@ -85,7 +85,7 @@ def main():
                 time.sleep(5)
 
     user_prompt = """
-    I want to buy either iphone 17 or iphone 17 pro, based on the pricing tell my how many I can buy. I have 1000000 budget.
+    I want to buy either iphone 17 or iphone 17 pro, based on the pricing tell my how many I can buy. I have 5000 budget.
     """
     result = run_agent(prompt=user_prompt, total_steps=20)
     print(f"Final Result is : {result}")
