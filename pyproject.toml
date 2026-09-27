@@ -9,9 +9,11 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "groq>=1.7.0",
+    "numpy>=2.5.3",
     "pre-commit>=4.6.2",
     "pydantic>=2.13.5",
     "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.1.0",
 ]
 
 [project.scripts]
