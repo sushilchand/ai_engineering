@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "groq>=1.7.0",
+    "langchain-text-splitters>=1.1.2",
     "numpy>=2.5.3",
     "pre-commit>=4.6.2",
     "pydantic>=2.13.5",
@@ -23,3 +24,6 @@ ai-engineering = "ai_engineering:main"
 [build-system]
 requires = ["uv_build>=0.12.14,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.isort]
+profile = "black"
