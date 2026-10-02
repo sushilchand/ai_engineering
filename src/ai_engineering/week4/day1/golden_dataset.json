@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "question": "How many vacation days do I get?",
+        "ground_truth": "Employees in India receive 24 days of paid leave per year.",
+        "expected_information": "The retrieved context should contain information that employees receive 24 days of paid leave per year."
+    },
+    {
+        "id": 2,
+        "question": "What is the work from home policy?",
+        "ground_truth": "Employees work from the office three days every week on Tuesday, Wednesday and Thursday.",
+        "expected_information": "The retrieved context should contain the hybrid work policy and the three office days: Tuesday, Wednesday and Thursday."
+    },
+    {
+        "id": 3,
+        "question": "How much internet reimbursement do employees receive?",
+        "ground_truth": "Employees receive Rs 2000 per month for home internet reimbursement.",
+        "expected_information": "The retrieved context should contain the Rs 2000 monthly internet reimbursement."
+    },
+    {
+        "id": 4,
+        "question": "When do promotions happen?",
+        "ground_truth": "Promotions happen twice every year during March and September.",
+        "expected_information": "The retrieved context should contain that promotions happen in March and September."
+    },
+    {
+        "id": 5,
+        "question": "What is the gym benefit?",
+        "ground_truth": "Employees receive Rs 3000 every month for gym memberships or fitness apps.",
+        "expected_information": "The retrieved context should contain the Rs 3000 monthly wellness benefit for gym or fitness apps."
+    }
+]
