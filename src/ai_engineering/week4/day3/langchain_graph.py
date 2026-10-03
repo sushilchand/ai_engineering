@@ -26,22 +26,22 @@ def decision(state: State) -> str:
 
 
 def main():
-    builder = StateGraph(State)
+    graph = StateGraph(State)
 
-    builder.add_node("double", double)
-    builder.add_node("finish", finish)
+    graph.add_node("double", double)
+    graph.add_node("finish", finish)
 
-    builder.set_entry_point("double")
+    graph.set_entry_point("double")
 
-    builder.add_conditional_edges(
+    graph.add_conditional_edges(
         "double", decision, {"double": "double", "finish": "finish"}
     )
 
-    builder.add_edge("finish", END)
+    graph.add_edge("finish", END)
 
-    graph = builder.compile()
+    compiled_graph = graph.compile()
 
-    graph.invoke({"number": 9, "log": ""})
+    compiled_graph.invoke({"number": 9, "log": ""})
 
 
 if __name__ == "__main__":
